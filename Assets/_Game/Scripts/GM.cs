@@ -12,6 +12,7 @@ public class GM : MonoBehaviour
 	int timeBefore = 0;
 
 	Agent correctAgent;
+	int correctAgentIndex;
 
 	void Awake ()
     {
@@ -32,8 +33,8 @@ public class GM : MonoBehaviour
     void Setup ()
     {
         List<Agent> agents = CreateAgents();
-		int ran = Random.Range(0,selections.Length);
-		correctAgent = agents[ran];
+		correctAgentIndex = Random.Range(0,selections.Length);
+		correctAgent = agents[correctAgentIndex];
 
         for (int i = 0; i < selections.Length; i++)
         {
@@ -46,7 +47,7 @@ public class GM : MonoBehaviour
 
 		//poner la primera pista
 
-		
+
 	}
 
 	
@@ -68,6 +69,16 @@ public class GM : MonoBehaviour
 				timer.text = minutosT.ToString("00")+":"+segundosT.ToString("00");
 			}
 		}
+
+		//encendiendo las luces si el horario aplica
+		if(correctAgent != null){
+			for (int i = 0; i < correctAgent.horario.Length; i++){
+				if(correctAgent.horario[i] == minuto){
+					//encender luces
+				}
+			}
+			
+		}
 	
 	}
 
@@ -85,7 +96,7 @@ public class GM : MonoBehaviour
 			Voz agentVoz;
 			string nombre;
 			string hintNombre;
-			int horario;
+			int[] horario;
 			string hintHorario;
 
 			if(face.sexo == 'F'){
