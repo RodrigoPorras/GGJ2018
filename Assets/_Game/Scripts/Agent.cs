@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Agent : MonoBehaviour {
+public class Agent : MonoBehaviour
+{
 	private int horario;
 	private string hintHorario;
 	private string nombre;
@@ -11,10 +12,11 @@ public class Agent : MonoBehaviour {
 	private string hintVoz;
 
 	private string hintFace;
-	private Face face;
+	public Face face;
 	
 	//Constructor
-	public Agent (int _horario,string _hintHorario,string _nombre,string _hintNombre,Voz _voz,Face _face){
+	public Agent (int _horario,string _hintHorario,string _nombre,string _hintNombre,Voz _voz,Face _face)
+    {
 		horario = _horario;
 		hintHorario = _hintHorario;
 		nombre = _nombre;

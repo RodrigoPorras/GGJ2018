@@ -2,27 +2,42 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GM : MonoBehaviour {
+public class GM : MonoBehaviour
+{
 	public static GM instance;
 	public GameObject material;
+    public Selection[] selections;
 
-	void Awake () {
+	void Awake ()
+    {
 		if(instance == null){
 			instance = this;
 		}else{
 			Destroy(this);
 		}
-
-	}
-		
-		
-
-	// Update is called once per frame
-	void Update () {
-		
 	}
 
-	public List<Agent> CreateAgents(){
+    private void Start()
+    {
+        Setup();
+    }
+
+    // Update is called once per frame
+    void Setup ()
+    {
+        List<Agent> agents = CreateAgents();
+        for (int i = 0; i < selections.Length; i++)
+        {
+            if (agents.Count> i)
+            {
+                selections[i].agent = agents[i];
+                selections[i].UpdateSlot();
+            }
+        }
+	}
+
+	public List<Agent> CreateAgents()
+    {
 		//cargo las listas con los valores de los array para poder ir eliminando los hint elegidos
 		HintContainer.instance.LoadListsForGenerateAgentsAgain();
 
@@ -69,8 +84,26 @@ public class GM : MonoBehaviour {
 			//creando el agente
 			Agent agente = new Agent(horario,hintHorario,nombre,hintNombre,agentVoz,face);
 			listAllAgents.Add(agente);
+            
 		}
+
+        for (int i = 0; i < listAllAgents.Count; i++)
+        {
+            Agent temp = listAllAgents[i];
+            int x = Random.Range(0, listAllAgents.Count);
+            listAllAgents[i] = listAllAgents[x];
+            listAllAgents[x] = temp;
+        }
 
 		return listAllAgents;
 	}
+
+    public bool RevealAgent(int index)
+    {
+        if (true)
+        {
+
+        }
+        return false;
+    }
 }
