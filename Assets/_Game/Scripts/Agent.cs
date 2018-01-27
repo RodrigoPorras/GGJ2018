@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class Agent : MonoBehaviour
 {
-	private int horario;
-	private string hintHorario;
-	private string nombre;
-	private string hintNombre;
-	private Voz voz;
-	private string hintVoz;
+	public int[] horario;
+	public string hintHorario;
+	public string nombre;
+	public string hintNombre;
+	public Voz voz;
+	public string hintVoz;
 
-	private string hintFace;
+	public string hintFace;
 	public Face face;
 	
 	//Constructor
-	public Agent (int _horario,string _hintHorario,string _nombre,string _hintNombre,Voz _voz,Face _face)
+	public Agent (int[] _horario,string _hintHorario,string _nombre,string _hintNombre,Voz _voz,Face _face)
     {
 		horario = _horario;
 		hintHorario = _hintHorario;

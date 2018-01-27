@@ -12,7 +12,7 @@ public class HintContainer : MonoBehaviour {
 		public string hint;  
 	} 	
 	public struct Horario{
-		public int horario;
+		public int[] horario;
 		public string hintHorario;
 	}
 	/////////////////
@@ -50,11 +50,11 @@ public class HintContainer : MonoBehaviour {
 		//TODO
 		//llenar horarios array
 		Horario h1,h2,h3;
-		h1.horario = 1;
+		h1.horario = new int[1]{1};
 		h1.hintHorario = "mas o menos cada "+h1.horario+" segundos";
-		h2.horario = 1;
+		h2.horario = new int[1]{1};
 		h2.hintHorario = "mas o menos cada "+h2.horario+" segundos";
-        h3.horario = 1;
+        h3.horario = new int[1]{1};
         h3.hintHorario = "mas o menos cada " + h2.horario + " segundos";
 
         horarios = new Horario[3]{h1,h2,h3};

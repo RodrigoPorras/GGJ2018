@@ -5,8 +5,14 @@ using UnityEngine;
 public class GM : MonoBehaviour
 {
 	public static GM instance;
-	public GameObject material;
     public Selection[] selections;
+	public TextMesh clock,timer; 
+	float currentTime = 0;
+	int timeLeft = 300; //segundos totales, en este caso 5 minutos son 300 segundos
+	int timeBefore = 0;
+
+	Agent correctAgent;
+	int correctAgentIndex;
 
 	void Awake ()
     {
@@ -20,12 +26,16 @@ public class GM : MonoBehaviour
     private void Start()
     {
         Setup();
+		currentTime = ((System.DateTime.Now.Hour%12) * 60) + (System.DateTime.Now.Minute);
     }
 
     // Update is called once per frame
     void Setup ()
     {
         List<Agent> agents = CreateAgents();
+		correctAgentIndex = Random.Range(0,selections.Length);
+		correctAgent = agents[correctAgentIndex];
+
         for (int i = 0; i < selections.Length; i++)
         {
             if (agents.Count> i)
@@ -34,7 +44,45 @@ public class GM : MonoBehaviour
                 selections[i].UpdateSlot();
             }
         }
+
+		//poner la primera pista
+
+
 	}
+
+	
+	// Update is called once per frame
+	
+	void Update () {
+		currentTime += Time.deltaTime;
+		int minuto = (int) currentTime % 60;//residuo que indica la cantidad en segundos
+		int hora = (int) (currentTime / 60);//division que representa la cantidad en minutos
+		clock.text = hora.ToString("00")+":"+minuto.ToString("00");
+
+		//Timer
+		if (timeLeft > 0) {//solo empieza a decrementar si tengo que decrementar
+			if (timeBefore !=  (int )Time.time) {//si mi tiempo anterior es diferente a mi tiempo actual en int
+				timeBefore = (int) Time.time;
+				timeLeft --;//decremento un segundo
+				int segundosT = (int) timeLeft % 60;//residuo que indica la cantidad en segundos
+				int minutosT = (int) (timeLeft / 60);//division que representa la cantidad en minutos
+				timer.text = minutosT.ToString("00")+":"+segundosT.ToString("00");
+			}
+		}
+
+		//encendiendo las luces si el horario aplica
+		if(correctAgent != null){
+			for (int i = 0; i < correctAgent.horario.Length; i++){
+				if(correctAgent.horario[i] == minuto){
+					//encender luces
+				}
+			}
+			
+		}
+	
+	}
+
+
 
 	public List<Agent> CreateAgents()
     {
@@ -48,7 +96,7 @@ public class GM : MonoBehaviour
 			Voz agentVoz;
 			string nombre;
 			string hintNombre;
-			int horario;
+			int[] horario;
 			string hintHorario;
 
 			if(face.sexo == 'F'){
