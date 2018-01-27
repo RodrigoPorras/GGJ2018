@@ -21,7 +21,7 @@ public class Test : MonoBehaviour
 
     private void Update()
     {
-        if (selected && GvrPointerInputModule.CurrentRaycastResult.gameObject == gameObject)
+        if (selected)
         {
             Vector3 newPos = myTransform.position;
             newPos.x = GvrPointerInputModule.CurrentRaycastResult.worldPosition.x;
@@ -46,14 +46,10 @@ public class Test : MonoBehaviour
 
     public void Press()
     {
-        selected = true;
-        //gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
+        if (!selected)
+        {
+            selected = true;
+            gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
+        }
     }
-
-    public void UnPress()
-    {
-        selected = false;
-        //gameObject.layer = LayerMask.NameToLayer("Default");
-    }
-
 }
