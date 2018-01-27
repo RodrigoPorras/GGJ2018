@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class GM : MonoBehaviour {
 	public static GM instance;
-	
+	public GameObject material;
+
 	void Awake () {
 		if(instance == null){
 			instance = this;
 		}else{
 			Destroy(this);
 		}
+
 	}
-	
+		
+		
+
 	// Update is called once per frame
 	void Update () {
 		

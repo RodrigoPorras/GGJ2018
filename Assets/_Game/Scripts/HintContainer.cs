@@ -40,6 +40,31 @@ public class HintContainer : MonoBehaviour {
 		}else{
 			Destroy(this);
 		}
+
+		//TODO
+		//llenar horarios array
+		Horario h1,h2;
+		h1.horario = 1;
+		h1.hintHorario = "mas o menos cada "+h1.horario+" segundos";
+		h2.horario = 1;
+		h2.hintHorario = "mas o menos cada "+h2.horario+" segundos";
+
+		horarios = new Horario[2]{h1,h2};
+		//llenar nombres hombres array 
+		NombreHombre nh1,nh2;
+		nh1.nombre = "Ramiro";
+		nh1.hint = "Contiene la letra a";
+		nh2.nombre = "Carlos";
+		nh2.hint = "Contiene la letra a y c ";
+		nombresHombres = new NombreHombre[2]{nh1,nh2};
+
+		//llenar nombres mujeres array
+		NombreMujer nm1,nm2;
+		nm1.nombre = "Andrea";
+		nm1.hint = "Contiene la letra d";
+		nm2.nombre = "Camila";
+		nm2.hint = "Contiene la letra c y a";
+		nombresMujeres = new NombreMujer[2]{nm1,nm2};
 	}
 
 	public void LoadListsForGenerateAgentsAgain(){
