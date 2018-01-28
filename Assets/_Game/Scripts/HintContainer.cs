@@ -49,22 +49,26 @@ public class HintContainer : MonoBehaviour {
 
 		//TODO
 		//llenar horarios array
-		Horario h1,h2,h3;
-		h1.horario = new int[1]{1};
+		Horario h1,h2,h3,h4;
+		h1.horario = new int[4]{1,2,3,4};
 		h1.hintHorario = "mas o menos cada "+h1.horario+" segundos";
-		h2.horario = new int[1]{1};
+		h2.horario = new int[30]{1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59};
 		h2.hintHorario = "mas o menos cada "+h2.horario+" segundos";
         h3.horario = new int[1]{1};
         h3.hintHorario = "mas o menos cada " + h2.horario + " segundos";
+        h4.horario = new int[0] {  };
+        h4.hintHorario = "Nunca esta conectado";
 
-        horarios = new Horario[3]{h1,h2,h3};
+        horarios = new Horario[4]{h1,h2,h3,h4};
 		//llenar nombres hombres array 
-		NombreHombre nh1,nh2;
+		NombreHombre nh1,nh2, nh3;
 		nh1.nombre = "Ramiro";
 		nh1.hint = "Contiene la letra a";
 		nh2.nombre = "Carlos";
 		nh2.hint = "Contiene la letra a y c ";
-		nombresHombres = new NombreHombre[2]{nh1,nh2};
+        nh3.nombre = "Carlos";
+        nh3.hint = "Contiene la letra a y c ";
+        nombresHombres = new NombreHombre[3]{nh1,nh2, nh3};
 
 		//llenar nombres mujeres array
 		NombreMujer nm1,nm2;

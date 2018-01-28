@@ -4,12 +4,20 @@ using UnityEngine;
 
 public class GM : MonoBehaviour
 {
+    // Public properties
 	public static GM instance;
     public Selection[] selections;
-	public TextMesh clock,timer; 
+	public TextMesh clock,timer;
+    int actualMin;
+    public int ActualMin
+    {
+        get { return actualMin; }
+    }
+    // Private properties
 	float currentTime = 0;
 	int timeLeft = 300; //segundos totales, en este caso 5 minutos son 300 segundos
 	int timeBefore = 0;
+    int score = 0;
 
 	Agent correctAgent;
 	int correctAgentIndex;
@@ -33,7 +41,7 @@ public class GM : MonoBehaviour
     void Setup ()
     {
         List<Agent> agents = CreateAgents();
-		correctAgentIndex = Random.Range(0,selections.Length);
+		correctAgentIndex = Random.Range(0, agents.Count); // TODO Cambiar a selection.lenght caundo hayan mas de 9 agentes
 		correctAgent = agents[correctAgentIndex];
 
         for (int i = 0; i < selections.Length; i++)
@@ -53,11 +61,13 @@ public class GM : MonoBehaviour
 	
 	// Update is called once per frame
 	
-	void Update () {
+	void Update ()
+    {
 		currentTime += Time.deltaTime;
 		int minuto = (int) currentTime % 60;//residuo que indica la cantidad en segundos
 		int hora = (int) (currentTime / 60);//division que representa la cantidad en minutos
 		clock.text = hora.ToString("00")+":"+minuto.ToString("00");
+        actualMin = minuto;
 
 		//Timer
 		if (timeLeft > 0) {//solo empieza a decrementar si tengo que decrementar
@@ -68,18 +78,7 @@ public class GM : MonoBehaviour
 				int minutosT = (int) (timeLeft / 60);//division que representa la cantidad en minutos
 				timer.text = minutosT.ToString("00")+":"+segundosT.ToString("00");
 			}
-		}
-
-		//encendiendo las luces si el horario aplica
-		if(correctAgent != null){
-			for (int i = 0; i < correctAgent.horario.Length; i++){
-				if(correctAgent.horario[i] == minuto){
-					//encender luces
-				}
-			}
-			
-		}
-	
+		}	
 	}
 
 
@@ -148,10 +147,21 @@ public class GM : MonoBehaviour
 
     public bool RevealAgent(int index)
     {
-        if (true)
+        if (correctAgentIndex == index)
         {
-
+            timeLeft += 15;
+            score++;
+            StartCoroutine(SetNextRound());
+            return true;
         }
+        timeLeft -= 20;
         return false;
+    }
+
+    WaitForSeconds waitForNextRound = new WaitForSeconds(1);
+    IEnumerator SetNextRound()
+    {
+        yield return waitForNextRound;
+        Setup();
     }
 }
