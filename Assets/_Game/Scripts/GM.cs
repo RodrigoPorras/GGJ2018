@@ -8,7 +8,7 @@ public class GM : MonoBehaviour
     // Public properties
 	public static GM instance;
     public Selection[] selections;
-	public TextMesh clock,timer;
+	public TextMesh clock,timer,lobbyClock;
     public GameObject[] hints;
     public Text[] hintsTexts;
     // Private properties
@@ -98,7 +98,7 @@ public class GM : MonoBehaviour
 		currentTime += Time.deltaTime;
 		int minuto = (int) currentTime % 60;//residuo que indica la cantidad en segundos
 		int hora = (int) (currentTime / 60);//division que representa la cantidad en minutos
-		clock.text = hora.ToString("00")+":"+minuto.ToString("00");
+		clock.text = lobbyClock.text = hora.ToString("00")+":"+minuto.ToString("00");
         actualMin = minuto;
 
 		//Timer
