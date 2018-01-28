@@ -221,7 +221,9 @@ public class GM : MonoBehaviour
         {
             ModifyTime(-10);
             hints[actualHint].SetActive(true);
-            actualHint++; 
+            actualHint++;
+            AudioSystem.Instance.PlaySound("Hoja");
+            AudioSystem.Instance.PlaySound("pista");
         }
     }
 
