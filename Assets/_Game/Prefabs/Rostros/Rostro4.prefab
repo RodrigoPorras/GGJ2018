@@ -51,6 +51,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 207ee118577f9469896dc44d6a5f56bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  predefineHint: El agente tiene el pelo largo
+  predefineHint: El agente tiene pelo largo
   sexo: 70
   faceSprite: {fileID: 21300000, guid: bd63117955c008b48a9f1d28ba694ebb, type: 3}

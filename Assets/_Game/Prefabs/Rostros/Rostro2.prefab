@@ -51,6 +51,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 207ee118577f9469896dc44d6a5f56bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  predefineHint: Nuestro agente con seguridad no tiene pelo negro
+  predefineHint: El agente no tiene pelo negro
   sexo: 70
   faceSprite: {fileID: 21300000, guid: 5b2e1047cf8896747833e67859507bd9, type: 3}

@@ -51,6 +51,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 207ee118577f9469896dc44d6a5f56bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  predefineHint: El agente tiene cuello de tortuga
+  predefineHint: El agente tiene un cuello de tortuga
   sexo: 77
   faceSprite: {fileID: 21300000, guid: 41a0dd3a22255c442a01249457379523, type: 3}
