@@ -27,6 +27,7 @@ public class MusicManager : MonoBehaviour {
 		mainAudioSource = this.GetComponent<AudioSource>();
 		//mainAudioSource.SetScheduledEndTime(17.45);
 		StartCoroutine(WhilePro());
+		StartCoroutine(EnviromentBehaviour());		
 	}
 
 	public void SetCurrentContex(int indexContext){
@@ -36,6 +37,7 @@ public class MusicManager : MonoBehaviour {
 			currentContext = context.gameplay;
 		else
 			currentContext = context.losing;
+		mainAudioSource.loop = false;
 	}
 
 	IEnumerator WhilePro(){
@@ -45,7 +47,7 @@ public class MusicManager : MonoBehaviour {
 			if(currentContext == context.lobby && !mainAudioSource.isPlaying){
 				if(mainAudioSource.clip != lobbyLoop){
 					mainAudioSource.clip = lobbyLoop;
-					
+					mainAudioSource.loop = true;
 				}
 				mainAudioSource.Play();
 			}else if(currentContext == context.gameplay && !mainAudioSource.isPlaying){
@@ -59,12 +61,23 @@ public class MusicManager : MonoBehaviour {
 			}else if(currentContext == context.losing && !mainAudioSource.isPlaying){
 				if(mainAudioSource.clip != losing){
 					mainAudioSource.clip = losing;
-					
 				}
 				mainAudioSource.Play();
 			} 
 			yield return null;
 		}
 	}
-	
+	IEnumerator EnviromentBehaviour(){
+		if(UnityEngine.Random.Range(0,2) == 0 )
+			AudioSystem.Instance.PlaySound("Carro");
+		if(UnityEngine.Random.Range(0,2) == 0 )
+			AudioSystem.Instance.PlaySound("Hoja");
+		if(UnityEngine.Random.Range(0,2) == 0 )
+			AudioSystem.Instance.PlaySound("Radio");
+		if(UnityEngine.Random.Range(0,2) == 0 )
+			AudioSystem.Instance.PlaySound("Telefono");
+
+		yield return new WaitForSeconds(UnityEngine.Random.Range(10,15));
+		StartCoroutine(EnviromentBehaviour());
+	}
 }
