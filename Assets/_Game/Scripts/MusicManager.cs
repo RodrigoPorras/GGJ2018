@@ -6,6 +6,8 @@ using System;
 public class MusicManager : MonoBehaviour {
 	public static MusicManager instance;
 	AudioSource mainAudioSource;
+	public AudioClip lobbyIntro,lobbyLoop,gameplay1,gameplay2,losing;
+
 	public enum context
 	{
 		lobby,gameplay,losing
@@ -18,31 +20,47 @@ public class MusicManager : MonoBehaviour {
 			instance = this;
 		else
 			Destroy(this);
-
 	}
 
 	void Start()
 	{
 		mainAudioSource = this.GetComponent<AudioSource>();
+		//mainAudioSource.SetScheduledEndTime(17.45);
 		StartCoroutine(WhilePro());
-		
 	}
 
 	void Update()
 	{
-		print(mainAudioSource.timeSamples/mainAudioSource.clip.frequency);
+		
 	}
 
 	IEnumerator WhilePro(){
-		while (currentContext == context.lobby)
+		yield return new WaitForSeconds(1);
+		while (true)
 		{
-			yield return new WaitForSeconds(17.45f);
-			mainAudioSource.time = 8.72f;
-		}
-		while (currentContext == context.gameplay)
-		{
-			yield return new WaitForSeconds(17.32f);
-			mainAudioSource.time = 8.72f;
+			print(mainAudioSource.clip.length);
+			if(currentContext == context.lobby && !mainAudioSource.isPlaying){
+				print("Repeat lobby");
+				if(mainAudioSource.clip != lobbyLoop){
+					mainAudioSource.clip = lobbyLoop;
+					
+				}
+				mainAudioSource.Play();
+			}else if(currentContext == context.gameplay && !mainAudioSource.isPlaying){
+				if(mainAudioSource.clip != gameplay1){
+					mainAudioSource.clip = gameplay1;
+					
+				}
+				mainAudioSource.Play();
+			}else if(currentContext == context.losing && !mainAudioSource.isPlaying){
+				if(mainAudioSource.clip != losing){
+					mainAudioSource.clip = losing;
+					
+				}
+				mainAudioSource.Play();
+			} 
+			yield return null;
 		}
 	}
+	
 }
