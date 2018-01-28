@@ -49,9 +49,11 @@ public class MusicManager : MonoBehaviour {
 				}
 				mainAudioSource.Play();
 			}else if(currentContext == context.gameplay && !mainAudioSource.isPlaying){
-				if(mainAudioSource.clip != gameplay1){
+				if(mainAudioSource.clip != gameplay1 && mainAudioSource != gameplay2){
 					mainAudioSource.clip = gameplay1;
 					
+				}else{
+					mainAudioSource.clip = gameplay2;
 				}
 				mainAudioSource.Play();
 			}else if(currentContext == context.losing && !mainAudioSource.isPlaying){
