@@ -22,6 +22,7 @@ public class Selection : MonoBehaviour
         if (Plug.Instance.isSelected)
         {
             Plug.Instance.Connect();
+            AudioSystem.Instance.PlaySound("plugin");
             bool correct = GM.instance.RevealAgent(index);
             StartCoroutine(ConnectionFeedback(correct));
         }
@@ -70,18 +71,29 @@ public class Selection : MonoBehaviour
     }
 
     WaitForSeconds lightWait = new WaitForSeconds(1f);
+    WaitForSeconds unplugWait = new WaitForSeconds(0.35f);
     IEnumerator ConnectionFeedback(bool correct)
     {
         if (correct)
         {
             TurnOnLight(0, Color.green);
+            AudioSystem.Instance.PlaySound("Correct");
         }
         else
         {
             TurnOnLight(0, Color.red);
+            AudioSystem.Instance.PlaySound("Incorrect");
         }
         yield return lightWait;
         TurnOffLight(0);
+        AudioSystem.Instance.PlaySound("Unplug");
+        yield return unplugWait;
         Plug.Instance.Reset();
     }
+
+    public void CheckVoice()
+    {
+        AudioSystem.Instance.PlayMusic(agent.voz.voz);
+    }
+
 }

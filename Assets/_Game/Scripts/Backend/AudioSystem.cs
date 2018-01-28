@@ -101,7 +101,6 @@ public class AudioSystem : MonoBehaviour
             loadedResources[x] = Resources.Load(resourceName) as AudioClip;
             fXSources[x].clip = loadedResources[x];
             fXSources[x].Play();
-            print(x);
             x++;
             if (x >= fXSources.Length)
                 x = 0;
@@ -110,6 +109,7 @@ public class AudioSystem : MonoBehaviour
 
     public void PlayMusic(string songName)
     {
+        print(1);
         if (!muteMusic)
         {
             songName = musicFolder + songName;
