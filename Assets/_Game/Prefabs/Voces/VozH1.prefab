@@ -51,5 +51,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c005c1c427e6b48e4bf2aebc15582e44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voz: {fileID: 8300000, guid: cc40ff8afc18ff846967a0b77fe36ab7, type: 3}
-  hint: ME PONES CACHONDA PINCHE PUTITTA
+  voz: Angery 1
+  hint: Suena enojado
