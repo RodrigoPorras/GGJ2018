@@ -1,0 +1,1065 @@
+fileFormatVersion: 2
+guid: ea100de5d701a460aab359b45be52d89
+timeCreated: 1517099947
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: sheetVentana1_0
+    21300002: sheetVentana1_1
+    21300004: sheetVentana1_2
+    21300006: sheetVentana1_3
+    21300008: sheetVentana1_4
+    21300010: sheetVentana1_5
+    21300012: sheetVentana1_6
+    21300014: sheetVentana1_7
+    21300016: sheetVentana1_8
+    21300018: sheetVentana1_9
+    21300020: sheetVentana1_10
+    21300022: sheetVentana1_11
+    21300024: sheetVentana1_12
+    21300026: sheetVentana1_13
+    21300028: sheetVentana1_14
+    21300030: sheetVentana1_15
+    21300032: sheetVentana1_16
+    21300034: sheetVentana1_17
+    21300036: sheetVentana1_18
+    21300038: sheetVentana1_19
+    21300040: sheetVentana1_20
+    21300042: sheetVentana1_21
+    21300044: sheetVentana1_22
+    21300046: sheetVentana1_23
+    21300048: sheetVentana1_24
+    21300050: sheetVentana1_25
+    21300052: sheetVentana1_26
+    21300054: sheetVentana1_27
+    21300056: sheetVentana1_28
+    21300058: sheetVentana1_29
+    21300060: sheetVentana1_30
+    21300062: sheetVentana1_31
+    21300064: sheetVentana1_32
+    21300066: sheetVentana1_33
+    21300068: sheetVentana1_34
+    21300070: sheetVentana1_35
+    21300072: sheetVentana1_36
+    21300074: sheetVentana1_37
+    21300076: sheetVentana1_38
+    21300078: sheetVentana1_39
+    21300080: sheetVentana1_40
+    21300082: sheetVentana1_41
+    21300084: sheetVentana1_42
+    21300086: sheetVentana1_43
+    21300088: sheetVentana1_44
+    21300090: sheetVentana1_45
+    21300092: sheetVentana1_46
+    21300094: sheetVentana1_47
+    21300096: sheetVentana1_48
+    21300098: sheetVentana1_49
+    21300100: sheetVentana1_50
+    21300102: sheetVentana1_51
+    21300104: sheetVentana1_52
+    21300106: sheetVentana1_53
+    21300108: sheetVentana1_54
+    21300110: sheetVentana1_55
+    21300112: sheetVentana1_56
+    21300114: sheetVentana1_57
+    21300116: sheetVentana1_58
+    21300118: sheetVentana1_59
+    21300120: sheetVentana1_60
+    21300122: sheetVentana1_61
+    21300124: sheetVentana1_62
+    21300126: sheetVentana1_63
+    21300128: sheetVentana1_64
+    21300130: sheetVentana1_65
+    21300132: sheetVentana1_66
+    21300134: sheetVentana1_67
+    21300136: sheetVentana1_68
+    21300138: sheetVentana1_69
+    21300140: sheetVentana1_70
+    21300142: sheetVentana1_71
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sheetVentana1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5887
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_1
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 5887
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_2
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 5887
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_3
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 5887
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_4
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 5887
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_5
+      rect:
+        serializedVersion: 2
+        x: 3680
+        y: 5887
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_6
+      rect:
+        serializedVersion: 2
+        x: 4416
+        y: 5887
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_7
+      rect:
+        serializedVersion: 2
+        x: 5152
+        y: 5887
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5151
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_9
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 5151
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_10
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 5151
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_11
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 5151
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_12
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 5151
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_13
+      rect:
+        serializedVersion: 2
+        x: 3680
+        y: 5151
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_14
+      rect:
+        serializedVersion: 2
+        x: 4416
+        y: 5151
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_15
+      rect:
+        serializedVersion: 2
+        x: 5152
+        y: 5151
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4415
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_17
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 4415
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_18
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 4415
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_19
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 4415
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_20
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 4415
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_21
+      rect:
+        serializedVersion: 2
+        x: 3680
+        y: 4415
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_22
+      rect:
+        serializedVersion: 2
+        x: 4416
+        y: 4415
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_23
+      rect:
+        serializedVersion: 2
+        x: 5152
+        y: 4415
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3679
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_25
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 3679
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_26
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 3679
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_27
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 3679
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_28
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 3679
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_29
+      rect:
+        serializedVersion: 2
+        x: 3680
+        y: 3679
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_30
+      rect:
+        serializedVersion: 2
+        x: 4416
+        y: 3679
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_31
+      rect:
+        serializedVersion: 2
+        x: 5152
+        y: 3679
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2943
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_33
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 2943
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_34
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 2943
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_35
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 2943
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_36
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 2943
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_37
+      rect:
+        serializedVersion: 2
+        x: 3680
+        y: 2943
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_38
+      rect:
+        serializedVersion: 2
+        x: 4416
+        y: 2943
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_39
+      rect:
+        serializedVersion: 2
+        x: 5152
+        y: 2943
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2207
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_41
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 2207
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_42
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 2207
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_43
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 2207
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_44
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 2207
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_45
+      rect:
+        serializedVersion: 2
+        x: 3680
+        y: 2207
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_46
+      rect:
+        serializedVersion: 2
+        x: 4416
+        y: 2207
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_47
+      rect:
+        serializedVersion: 2
+        x: 5152
+        y: 2207
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1471
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_49
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 1471
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_50
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 1471
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_51
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 1471
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_52
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 1471
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_53
+      rect:
+        serializedVersion: 2
+        x: 3680
+        y: 1471
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_54
+      rect:
+        serializedVersion: 2
+        x: 4416
+        y: 1471
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_55
+      rect:
+        serializedVersion: 2
+        x: 5152
+        y: 1471
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 735
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_57
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 735
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_58
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 735
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_59
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 735
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_60
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 735
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_61
+      rect:
+        serializedVersion: 2
+        x: 3680
+        y: 735
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_62
+      rect:
+        serializedVersion: 2
+        x: 4416
+        y: 735
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sheetVentana1_63
+      rect:
+        serializedVersion: 2
+        x: 5152
+        y: 735
+        width: 736
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

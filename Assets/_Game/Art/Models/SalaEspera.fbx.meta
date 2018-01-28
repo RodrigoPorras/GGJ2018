@@ -1,0 +1,231 @@
+fileFormatVersion: 2
+guid: 4125c4b4c50284b1fb43f7469256b370
+timeCreated: 1517100650
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Alfombra
+    100002: Calendario
+    100004: Corcho
+    100006: Cube_Cube.000
+    100008: Cube_Cube.001
+    100010: Cube_Cube.002
+    100012: Cube_Cube.003
+    100014: Cube_Cube.004
+    100016: Cylinder
+    100018: Cylinder.001
+    100020: Doorknob
+    100022: Florero
+    100024: LienzoDePintura
+    100026: Mesa
+    100028: Mesa.001
+    100030: Muro
+    100032: Piso
+    100034: Radio
+    100036: ResorteCalendario
+    100038: //RootNode
+    100040: Socalo
+    100042: Sphere
+    100044: Ventana2
+    100046: Ventana3
+    400000: Alfombra
+    400002: Calendario
+    400004: Corcho
+    400006: Cube_Cube.000
+    400008: Cube_Cube.001
+    400010: Cube_Cube.002
+    400012: Cube_Cube.003
+    400014: Cube_Cube.004
+    400016: Cylinder
+    400018: Cylinder.001
+    400020: Doorknob
+    400022: Florero
+    400024: LienzoDePintura
+    400026: Mesa
+    400028: Mesa.001
+    400030: Muro
+    400032: Piso
+    400034: Radio
+    400036: ResorteCalendario
+    400038: //RootNode
+    400040: Socalo
+    400042: Sphere
+    400044: Ventana2
+    400046: Ventana3
+    2100000: Cristal
+    2100002: Marco
+    2100004: Material.017
+    2100006: Material.016
+    2100008: wall
+    2100010: WallBaJO
+    2100012: Socalo
+    2100014: Material.008
+    2100016: Material.004
+    2100018: Material.005
+    2100020: Material.006
+    2100022: Material.003
+    2100024: Material.007
+    2100026: Material.012
+    2100028: Material.013
+    2100030: No Name
+    2100032: Knob
+    2100034: Door
+    2100036: Material.002
+    2100038: Reflective
+    2100040: LampBase
+    2100042: Material.009
+    2100044: Alfombra
+    2100046: Material.019
+    2100048: Material.018
+    2100050: Marco.001
+    2100052: fotos
+    2300000: Alfombra
+    2300002: Calendario
+    2300004: Corcho
+    2300006: Cube_Cube.000
+    2300008: Cube_Cube.001
+    2300010: Cube_Cube.002
+    2300012: Cube_Cube.003
+    2300014: Cube_Cube.004
+    2300016: Cylinder
+    2300018: Cylinder.001
+    2300020: Doorknob
+    2300022: Florero
+    2300024: LienzoDePintura
+    2300026: Mesa
+    2300028: Mesa.001
+    2300030: Muro
+    2300032: Piso
+    2300034: Radio
+    2300036: ResorteCalendario
+    2300038: Socalo
+    2300040: Sphere
+    2300042: Ventana2
+    2300044: Ventana3
+    3300000: Alfombra
+    3300002: Calendario
+    3300004: Corcho
+    3300006: Cube_Cube.000
+    3300008: Cube_Cube.001
+    3300010: Cube_Cube.002
+    3300012: Cube_Cube.003
+    3300014: Cube_Cube.004
+    3300016: Cylinder
+    3300018: Cylinder.001
+    3300020: Doorknob
+    3300022: Florero
+    3300024: LienzoDePintura
+    3300026: Mesa
+    3300028: Mesa.001
+    3300030: Muro
+    3300032: Piso
+    3300034: Radio
+    3300036: ResorteCalendario
+    3300038: Socalo
+    3300040: Sphere
+    3300042: Ventana2
+    3300044: Ventana3
+    4300000: Ventana3
+    4300002: Cube_Cube.003
+    4300004: Cylinder.001
+    4300006: Florero
+    4300008: Muro
+    4300010: Radio
+    4300012: Corcho
+    4300014: Cube_Cube.001
+    4300016: Mesa
+    4300018: Piso
+    4300020: Ventana2
+    4300022: Cube_Cube.002
+    4300024: Doorknob
+    4300026: Cube_Cube.004
+    4300028: Calendario
+    4300030: ResorteCalendario
+    4300032: Cylinder
+    4300034: Sphere
+    4300036: Alfombra
+    4300038: Mesa.001
+    4300040: Socalo
+    4300042: Cube_Cube.000
+    4300044: LienzoDePintura
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 0
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
