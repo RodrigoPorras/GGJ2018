@@ -92,45 +92,45 @@ public class HintContainer : MonoBehaviour {
 		//llenar nombres hombres array 
 		NombreHombre nh1,nh2, nh3, nh4, nh5, nh6, nh7, nh8, nh9, nh10;
 		nh1.nombre = "Robert Tully";
-		nh1.hint = "Contiene la letra a";
+		nh1.hint = "Chespirito es su legado";
 		nh2.nombre = "Charles Goldman";
-		nh2.hint = "Contiene la letra a y c ";
+		nh2.hint = "El toque de midas";
         nh3.nombre = "Martin Glimcher";
-        nh3.hint = "Contiene la letra a y c ";
+        nh3.hint = "Su nombre es similar al arma del dios del rayo";
         nh4.nombre = "Ivan Ospina";
-        nh4.hint = "Contiene la letra a y c ";
+        nh4.hint = "Actualmente vive en su van";
         nh5.nombre = "Francisco Rios";
-        nh5.hint = "Contiene la letra a y c ";
+        nh5.hint = "Amante de francia";
         nh6.nombre = "Ciro Pertusi";
-        nh6.hint = "Contiene la letra a y c ";
+        nh6.hint = "Ama los círicos";
         nh7.nombre = "Andres Gramsci";
-        nh7.hint = "Contiene la letra a y c ";
+        nh7.hint = "Un pro gramatical";
         nh8.nombre = "Michael Dickens";
-        nh8.hint = "Contiene la letra a y c ";
+        nh8.hint = "Scrooge y sus fantasmas de navidad";
         nh9.nombre = "Sergey Adamovich";
-        nh9.hint = "Contiene la letra a y c ";
+        nh9.hint = "Tan duro como el adamantium";
         nh10.nombre = "Enzo Altieri";
-        nh10.hint = "Contiene la letra a y c ";
+        nh10.hint = "Desea tener un ferrari";
         nombresHombres = new NombreHombre[10]{ nh1, nh2, nh3, nh4, nh5, nh6, nh7, nh8, nh9, nh10 };
 
         //llenar nombres mujeres array
         NombreMujer nm1, nm2, nm3, nm4, nm5, nm6, nm7, nm8, nm9;
 		nm1.nombre = "Elena Pavao";
-		nm1.hint = "Contiene la letra d";
+		nm1.hint = "Una princesa troyana";
 		nm2.nombre = "Erika Blosch";
-		nm2.hint = "Contiene la letra c y a";
+		nm2.hint = "Eureka!";
         nm3.nombre = "Marta Martinez";
-        nm3.hint = "Contiene la letra c y a";
+        nm3.hint = "Que bueno los M&M's";
         nm4.nombre = "Aida Divjak";
         nm4.hint = "Contiene la letra c y a";
         nm5.nombre = "Anna Belka";
-        nm5.hint = "Contiene la letra c y a";
+        nm5.hint = "Hermana de una reina helada";
         nm6.nombre = "Jana Mora";
-        nm6.hint = "Contiene la letra c y a";
+        nm6.hint = "No hay como el jugo de...";
         nm7.nombre = "Christine Alkins";
-        nm7.hint = "Contiene la letra c y a";
+        nm7.hint = "La religion ha otorgado gran cantidad de nombres";
         nm8.nombre = "Irina Folks";
-        nm8.hint = "Contiene la letra c y a";
+        nm8.hint = "Algo le decia que su vida estaria relacionada con la panaderia";
         nombresMujeres = new NombreMujer[8]{ nm1, nm2, nm3, nm4, nm5, nm6, nm7, nm8 };
 	}
 
