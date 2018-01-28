@@ -109,7 +109,7 @@ public class HintContainer : MonoBehaviour {
         nh8.hint = "Contiene la letra a y c ";
         nh9.nombre = "Sergey Adamovich";
         nh9.hint = "Contiene la letra a y c ";
-        nh10.nombre = "Sergey Adamovich";
+        nh10.nombre = "Enzo Altieri";
         nh10.hint = "Contiene la letra a y c ";
         nombresHombres = new NombreHombre[10]{ nh1, nh2, nh3, nh4, nh5, nh6, nh7, nh8, nh9, nh10 };
 

@@ -17,8 +17,10 @@ public class GM : MonoBehaviour
 	int timeBefore = 0;
     int score = 0;
     int actualMin;
+    int correctAgentIndex;
+    int actualHint;
     Agent correctAgent;
-	int correctAgentIndex;
+	
 
     // Properties
     public int ActualMin
@@ -66,10 +68,7 @@ public class GM : MonoBehaviour
             hintOrder[x] = temp;
         }
         //poner la primera pista
-        Debug.Log(correctAgent.hintFace);
-        Debug.Log(correctAgent.hintHorario);
-        Debug.Log(correctAgent.hintNombre);
-        Debug.Log(correctAgent.hintVoz);
+        
         for (int i = 0; i < hints.Length; i++)
         {
             switch (hintOrder[i])
@@ -88,7 +87,7 @@ public class GM : MonoBehaviour
                     break;
             }
         }
-
+        actualHint = 1;
 	}
 
 	
@@ -182,13 +181,28 @@ public class GM : MonoBehaviour
     {
         if (correctAgentIndex == index)
         {
-            timeLeft += 15;
+            ModifyTime( 15);
             score++;
             StartCoroutine(SetNextRound());
             return true;
         }
-        timeLeft -= 20;
+        ModifyTime(-20);
         return false;
+    }
+
+    void ModifyTime(int value)
+    {
+        timeLeft += value;
+    }
+
+    public void AskForHint()
+    {
+        if (actualHint < hints.Length && Plug.Instance.isSelected)
+        {
+            ModifyTime(-10);
+            hints[actualHint].SetActive(true);
+            actualHint++; 
+        }
     }
 
     WaitForSeconds waitForNextRound = new WaitForSeconds(1);
