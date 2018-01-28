@@ -13,7 +13,7 @@ public class GM : MonoBehaviour
     public Text[] hintsTexts;
     // Private properties
     float currentTime = 0;
-	int timeLeft = 300; //segundos totales, en este caso 5 minutos son 300 segundos
+	int timeLeft = 30; //segundos totales, en este caso 5 minutos son 300 segundos
 	int timeBefore = 0;
     int score = 0;
     int actualMin;
@@ -102,15 +102,25 @@ public class GM : MonoBehaviour
         actualMin = minuto;
 
 		//Timer
+        int segundosT = 0;
+        int minutosT = 0;
 		if (timeLeft > 0) {//solo empieza a decrementar si tengo que decrementar
 			if (timeBefore !=  (int )Time.time) {//si mi tiempo anterior es diferente a mi tiempo actual en int
 				timeBefore = (int) Time.time;
 				timeLeft --;//decremento un segundo
-				int segundosT = (int) timeLeft % 60;//residuo que indica la cantidad en segundos
-				int minutosT = (int) (timeLeft / 60);//division que representa la cantidad en minutos
+				segundosT = (int) timeLeft % 60;//residuo que indica la cantidad en segundos
+				minutosT = (int) (timeLeft / 60);//division que representa la cantidad en minutos
 				timer.text = minutosT.ToString("00")+":"+segundosT.ToString("00");
+
+                //verificando el timer para saber si esta a punto de perder y cambiar la musica
+                if(timeLeft < 15){
+                    MusicManager.instance.SetCurrentContex(2);
+                }else{
+                    MusicManager.instance.SetCurrentContex(1);
+                }
 			}
 		}	
+        
 	}
 
 

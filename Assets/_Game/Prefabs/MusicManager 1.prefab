@@ -134,7 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lobbyIntro: {fileID: 8300000, guid: e3dc685f994aa4d5c9112006c7a8d9c8, type: 3}
   lobbyLoop: {fileID: 8300000, guid: 512091eb9baa8441987670bbdcd049c4, type: 3}
-  gameplay1: {fileID: 8300000, guid: 1666bf9daed9e4c67874c6a77f4fae82, type: 3}
+  gameplay1: {fileID: 8300000, guid: 5e32955c1dc92499d8f236ab6bf7c544, type: 3}
   gameplay2: {fileID: 8300000, guid: af285fe3d31704f77a00b22412706340, type: 3}
   losing: {fileID: 8300000, guid: 8df1d49f5221f4b42bf96b677a27cc69, type: 3}
   currentContext: 0
