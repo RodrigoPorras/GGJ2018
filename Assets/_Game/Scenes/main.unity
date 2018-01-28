@@ -6267,6 +6267,11 @@ Prefab:
       propertyPath: vocesHombres.Array.size
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 114973153318228996, guid: a15135d3917ec48b9bf27e779c80e83f,
+        type: 2}
+      propertyPath: vocesMujeres.Array.size
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4471646929155364, guid: a15135d3917ec48b9bf27e779c80e83f, type: 2}
       propertyPath: m_LocalPosition.x
       value: -2.4621506
@@ -6303,55 +6308,109 @@ Prefab:
         type: 2}
       propertyPath: vocesHombres.Array.data[1]
       value: 
-      objectReference: {fileID: 114948517635877978, guid: a6b1fb3560666410dacc11a754391ee0,
+      objectReference: {fileID: 114948517635877978, guid: 4f0c6e76c80de30498a8c72848299de2,
         type: 2}
     - target: {fileID: 114973153318228996, guid: a15135d3917ec48b9bf27e779c80e83f,
         type: 2}
       propertyPath: vocesHombres.Array.data[2]
       value: 
-      objectReference: {fileID: 114948517635877978, guid: a6b1fb3560666410dacc11a754391ee0,
+      objectReference: {fileID: 114948517635877978, guid: efceacbc86631bd4595953e7c3eb4816,
         type: 2}
     - target: {fileID: 114973153318228996, guid: a15135d3917ec48b9bf27e779c80e83f,
         type: 2}
       propertyPath: vocesHombres.Array.data[3]
       value: 
-      objectReference: {fileID: 114948517635877978, guid: a6b1fb3560666410dacc11a754391ee0,
+      objectReference: {fileID: 114948517635877978, guid: 4238a9b0accc1486e8dc05abd13f7406,
         type: 2}
     - target: {fileID: 114973153318228996, guid: a15135d3917ec48b9bf27e779c80e83f,
         type: 2}
       propertyPath: vocesHombres.Array.data[4]
       value: 
-      objectReference: {fileID: 114948517635877978, guid: a6b1fb3560666410dacc11a754391ee0,
+      objectReference: {fileID: 114948517635877978, guid: 0d2cc6750da5348bbb6e3f38b2370315,
         type: 2}
     - target: {fileID: 114973153318228996, guid: a15135d3917ec48b9bf27e779c80e83f,
         type: 2}
       propertyPath: vocesHombres.Array.data[5]
       value: 
-      objectReference: {fileID: 114948517635877978, guid: a6b1fb3560666410dacc11a754391ee0,
+      objectReference: {fileID: 114948517635877978, guid: 05e34ef52efa64704a72037c73ccff0a,
         type: 2}
     - target: {fileID: 114973153318228996, guid: a15135d3917ec48b9bf27e779c80e83f,
         type: 2}
       propertyPath: vocesHombres.Array.data[6]
       value: 
-      objectReference: {fileID: 114948517635877978, guid: a6b1fb3560666410dacc11a754391ee0,
+      objectReference: {fileID: 114948517635877978, guid: 4cf9089f64db7420480b1f84d54024f8,
         type: 2}
     - target: {fileID: 114973153318228996, guid: a15135d3917ec48b9bf27e779c80e83f,
         type: 2}
       propertyPath: vocesHombres.Array.data[7]
       value: 
-      objectReference: {fileID: 114948517635877978, guid: a6b1fb3560666410dacc11a754391ee0,
+      objectReference: {fileID: 114948517635877978, guid: 12d40af5295f5442ba96849e2cf58ff5,
         type: 2}
     - target: {fileID: 114973153318228996, guid: a15135d3917ec48b9bf27e779c80e83f,
         type: 2}
       propertyPath: vocesHombres.Array.data[8]
       value: 
-      objectReference: {fileID: 114948517635877978, guid: a6b1fb3560666410dacc11a754391ee0,
+      objectReference: {fileID: 114948517635877978, guid: 0d2b9e03987274950938ea1662c76489,
         type: 2}
     - target: {fileID: 114973153318228996, guid: a15135d3917ec48b9bf27e779c80e83f,
         type: 2}
       propertyPath: vocesHombres.Array.data[9]
       value: 
+      objectReference: {fileID: 114948517635877978, guid: 2ef86dcef12614749adff6166b35d337,
+        type: 2}
+    - target: {fileID: 114973153318228996, guid: a15135d3917ec48b9bf27e779c80e83f,
+        type: 2}
+      propertyPath: vocesHombres.Array.data[0]
+      value: 
       objectReference: {fileID: 114948517635877978, guid: a6b1fb3560666410dacc11a754391ee0,
+        type: 2}
+    - target: {fileID: 114973153318228996, guid: a15135d3917ec48b9bf27e779c80e83f,
+        type: 2}
+      propertyPath: vocesMujeres.Array.data[0]
+      value: 
+      objectReference: {fileID: 114948517635877978, guid: 3fa0827becfe3401b8c115698c42c522,
+        type: 2}
+    - target: {fileID: 114973153318228996, guid: a15135d3917ec48b9bf27e779c80e83f,
+        type: 2}
+      propertyPath: vocesMujeres.Array.data[1]
+      value: 
+      objectReference: {fileID: 114948517635877978, guid: a4a63e76abba97a4ba0b046dc4225027,
+        type: 2}
+    - target: {fileID: 114973153318228996, guid: a15135d3917ec48b9bf27e779c80e83f,
+        type: 2}
+      propertyPath: vocesMujeres.Array.data[2]
+      value: 
+      objectReference: {fileID: 114948517635877978, guid: 54bdd5af48d8e46cca00c76bac319790,
+        type: 2}
+    - target: {fileID: 114973153318228996, guid: a15135d3917ec48b9bf27e779c80e83f,
+        type: 2}
+      propertyPath: vocesMujeres.Array.data[3]
+      value: 
+      objectReference: {fileID: 114948517635877978, guid: 10f82f7699de14ed2af5f2a7587e6ae7,
+        type: 2}
+    - target: {fileID: 114973153318228996, guid: a15135d3917ec48b9bf27e779c80e83f,
+        type: 2}
+      propertyPath: vocesMujeres.Array.data[4]
+      value: 
+      objectReference: {fileID: 114948517635877978, guid: 96cf279506ee44d47816e5d85cc898a7,
+        type: 2}
+    - target: {fileID: 114973153318228996, guid: a15135d3917ec48b9bf27e779c80e83f,
+        type: 2}
+      propertyPath: vocesMujeres.Array.data[5]
+      value: 
+      objectReference: {fileID: 114948517635877978, guid: 87daa2441f4524c1d8d50d1837b2a464,
+        type: 2}
+    - target: {fileID: 114973153318228996, guid: a15135d3917ec48b9bf27e779c80e83f,
+        type: 2}
+      propertyPath: vocesMujeres.Array.data[6]
+      value: 
+      objectReference: {fileID: 114948517635877978, guid: 469fedeb095274d3c911f7840acd2305,
+        type: 2}
+    - target: {fileID: 114973153318228996, guid: a15135d3917ec48b9bf27e779c80e83f,
+        type: 2}
+      propertyPath: vocesMujeres.Array.data[7]
+      value: 
+      objectReference: {fileID: 114948517635877978, guid: fcf3037b1c33340499aa9071748e85cc,
         type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a15135d3917ec48b9bf27e779c80e83f, type: 2}
