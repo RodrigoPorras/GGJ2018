@@ -9,7 +9,7 @@ public class Selection : MonoBehaviour
     Image image;
     Text nameText;
     public int index;
-    public Renderer[] lights;
+    public Light[] lights;
 
     private void Awake()
     {
@@ -45,18 +45,13 @@ public class Selection : MonoBehaviour
     /// <param name="col">Color to be shown</param>
     void TurnOnLight(int lightNum, Color col)
     {
-        if (lights[lightNum].material.color != col)
-        {
-            lights[lightNum].material.color = col;
-        }
+        lights[lightNum].enabled = true;
+        lights[lightNum].color = col;
     }
 
     void TurnOffLight(int lightNum)
     {
-        if (lights[lightNum].material.color != Color.white)
-        {
-            lights[lightNum].material.color = Color.white;
-        }
+        lights[lightNum].enabled = false;
     }
 
     private void Update()
