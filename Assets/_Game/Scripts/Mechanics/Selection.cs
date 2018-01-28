@@ -7,12 +7,14 @@ public class Selection : MonoBehaviour
 {
     public Agent agent;
     Image image;
+    Text nameText;
     public int index;
     public Light[] lights;
 
     private void Awake()
     {
         image = GetComponent<Image>();
+        nameText = transform.GetChild(1).GetComponent<Text>();
     }
 
     public void Interact()
@@ -28,6 +30,7 @@ public class Selection : MonoBehaviour
     public void UpdateSlot()
     {
         image.sprite = agent.face.faceSprite;
+        nameText.text = agent.nombre;
     }
 
     /// <summary>

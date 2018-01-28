@@ -51,6 +51,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 207ee118577f9469896dc44d6a5f56bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  predefineHint: 
-  sexo: 77
-  faceSprite: {fileID: 21300000, guid: 173b078d86dd31c4e93b6a9ebe524f88, type: 3}
+  predefineHint: El agente tiene pestanas largas
+  sexo: 70
+  faceSprite: {fileID: 21300000, guid: bd73c3f384c1b924086594d822045102, type: 3}

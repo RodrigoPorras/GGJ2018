@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GM : MonoBehaviour
 {
@@ -8,21 +9,24 @@ public class GM : MonoBehaviour
 	public static GM instance;
     public Selection[] selections;
 	public TextMesh clock,timer;
+    public GameObject[] hints;
+    public Text[] hintsTexts;
+    // Private properties
+    float currentTime = 0;
+	int timeLeft = 300; //segundos totales, en este caso 5 minutos son 300 segundos
+	int timeBefore = 0;
+    int score = 0;
     int actualMin;
+    Agent correctAgent;
+	int correctAgentIndex;
+
+    // Properties
     public int ActualMin
     {
         get { return actualMin; }
     }
-    // Private properties
-	float currentTime = 0;
-	int timeLeft = 300; //segundos totales, en este caso 5 minutos son 300 segundos
-	int timeBefore = 0;
-    int score = 0;
 
-	Agent correctAgent;
-	int correctAgentIndex;
-
-	void Awake ()
+    void Awake ()
     {
 		if(instance == null){
 			instance = this;
@@ -41,7 +45,7 @@ public class GM : MonoBehaviour
     void Setup ()
     {
         List<Agent> agents = CreateAgents();
-		correctAgentIndex = Random.Range(0, agents.Count); // TODO Cambiar a selection.lenght caundo hayan mas de 9 agentes
+		correctAgentIndex = Random.Range(0, selections.Length); // TODO Cambiar a selection.lenght caundo hayan mas de 9 agentes
 		correctAgent = agents[correctAgentIndex];
 
         for (int i = 0; i < selections.Length; i++)
@@ -52,9 +56,38 @@ public class GM : MonoBehaviour
                 selections[i].UpdateSlot();
             }
         }
+        int[] hintOrder = new int[4] { 0, 1, 2, 3};
 
-		//poner la primera pista
-
+        for (int i = 0; i < hintOrder.Length; i++)
+        {
+            int temp = hintOrder[i];
+            int x = Random.Range(0, hintOrder.Length);
+            hintOrder[i] = hintOrder[x];
+            hintOrder[x] = temp;
+        }
+        //poner la primera pista
+        Debug.Log(correctAgent.hintFace);
+        Debug.Log(correctAgent.hintHorario);
+        Debug.Log(correctAgent.hintNombre);
+        Debug.Log(correctAgent.hintVoz);
+        for (int i = 0; i < hints.Length; i++)
+        {
+            switch (hintOrder[i])
+            {
+                case 0:
+                    hintsTexts[i].text = correctAgent.hintFace;
+                    break;
+                case 1:
+                    hintsTexts[i].text = correctAgent.hintHorario;
+                    break;
+                case 2:
+                    hintsTexts[i].text = correctAgent.hintNombre;
+                    break;
+                case 3:
+                    hintsTexts[i].text = correctAgent.hintVoz;
+                    break;
+            }
+        }
 
 	}
 
