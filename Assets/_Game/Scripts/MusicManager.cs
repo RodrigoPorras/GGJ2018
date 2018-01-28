@@ -29,18 +29,20 @@ public class MusicManager : MonoBehaviour {
 		StartCoroutine(WhilePro());
 	}
 
-	void Update()
-	{
-		
+	public void SetCurrentContex(int indexContext){
+		if(indexContext == 0)
+			currentContext = context.lobby;
+		else if(indexContext == 1)
+			currentContext = context.gameplay;
+		else
+			currentContext = context.losing;
 	}
 
 	IEnumerator WhilePro(){
 		yield return new WaitForSeconds(1);
 		while (true)
 		{
-			print(mainAudioSource.clip.length);
 			if(currentContext == context.lobby && !mainAudioSource.isPlaying){
-				print("Repeat lobby");
 				if(mainAudioSource.clip != lobbyLoop){
 					mainAudioSource.clip = lobbyLoop;
 					
