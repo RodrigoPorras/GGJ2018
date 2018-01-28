@@ -86,7 +86,11 @@ public class GM : MonoBehaviour
                     hintsTexts[i].text = correctAgent.hintVoz;
                     break;
             }
+            if (i > 0)
+                hints[i].SetActive(false);
         }
+        AudioSystem.Instance.PlaySound("lapiz");
+        AudioSystem.Instance.PlaySound("Hoja");
         actualHint = 1;
 	}
 
