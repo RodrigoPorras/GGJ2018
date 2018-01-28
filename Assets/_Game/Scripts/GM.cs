@@ -13,14 +13,14 @@ public class GM : MonoBehaviour
     public Text[] hintsTexts;
     // Private properties
     float currentTime = 0;
-	int timeLeft = 30; //segundos totales, en este caso 5 minutos son 300 segundos
+	int timeLeft = 120; //segundos totales, en este caso 5 minutos son 300 segundos
 	int timeBefore = 0;
     int score = 0;
     int actualMin;
     int correctAgentIndex;
     int actualHint;
     Agent correctAgent;
-	
+	public GameObject Canvas_UI;
 
     // Properties
     public int ActualMin
@@ -113,10 +113,16 @@ public class GM : MonoBehaviour
 				timer.text = minutosT.ToString("00")+":"+segundosT.ToString("00");
 
                 //verificando el timer para saber si esta a punto de perder y cambiar la musica
-                if(timeLeft < 15){
+                if(timeLeft < 30){
                     MusicManager.instance.SetCurrentContex(2);
                 }else{
                     MusicManager.instance.SetCurrentContex(1);
+                }
+
+                //verificando si pierde por el tiempo
+                if(timeLeft <= 0){
+                    Canvas_UI.SetActive(true);
+                    Canvas_UI.transform.GetChild(0).GetChild(1).GetComponent<Text>().text = "SCORE: "+score;
                 }
 			}
 		}	
@@ -219,6 +225,12 @@ public class GM : MonoBehaviour
     IEnumerator SetNextRound()
     {
         yield return waitForNextRound;
+        Setup();
+    }
+
+    public void RestartGame(){
+        timeLeft = 120;
+        score = 0;
         Setup();
     }
 }
