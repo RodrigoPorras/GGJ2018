@@ -123,13 +123,14 @@ public class GM : MonoBehaviour
                     MusicManager.instance.SetCurrentContex(1);
                 }
 
-                //verificando si pierde por el tiempo
-                if(timeLeft <= 0){
-                    Canvas_UI.SetActive(true);
-                    Canvas_UI.transform.GetChild(0).GetChild(1).GetComponent<Text>().text = "SCORE: "+score;
-                }
+                
 			}
-		}	
+		}else{
+            //verificando si pierde por el tiempo
+            Canvas_UI.SetActive(true);
+            Canvas_UI.transform.GetChild(0).GetChild(1).GetComponent<Text>().text = "SCORE: "+score;
+            timer.text = "00:00";
+        }	
         
 	}
 
