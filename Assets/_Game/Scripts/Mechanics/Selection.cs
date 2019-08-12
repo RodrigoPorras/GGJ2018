@@ -9,12 +9,15 @@ public class Selection : MonoBehaviour
     Image image;
     Text nameText;
     public int index;
-    public Light[] lights;
+    public Renderer[] lightsRenderer = new Renderer[2];
 
     private void Awake()
     {
         image = GetComponent<Image>();
         nameText = transform.GetChild(1).GetComponent<Text>();
+        lightsRenderer = new Renderer[2];
+        lightsRenderer[0] = transform.GetChild(2).GetComponent<Renderer>();
+        lightsRenderer[1] = transform.GetChild(3).GetComponent<Renderer>();
     }
 
     public void Interact()
@@ -45,13 +48,13 @@ public class Selection : MonoBehaviour
     /// <param name="col">Color to be shown</param>
     void TurnOnLight(int lightNum, Color col)
     {
-        lights[lightNum].enabled = true;
-        lights[lightNum].color = col;
+        lightsRenderer[lightNum].enabled = true;
+        lightsRenderer[lightNum].material.color = col;
     }
 
     void TurnOffLight(int lightNum)
     {
-        lights[lightNum].enabled = false;
+        lightsRenderer[lightNum].enabled = false;
     }
 
     private void Update()
